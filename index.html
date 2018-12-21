@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SBUCKS</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet" />
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <style>
+        body{
+        font-family: 'Catamaran';
+        background-color: wheat;
+
+    }
+    .logo{
+        padding-top: 20px;
+    }
+
+    .product{
+        font-size :20px;
+        text-align: center;
+        padding: 30px 0;
+        font-weight: 900;
+    }
+    
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-sm-6">
+                <div class="col-sm-3 logo">
+                    <img src="assets/img/sbucks.png" width="100px" height="100px" />
+                </div>
+                <div class="col-sm-3 product">
+                    STARBUCKS COFFEE
+                </div>
+            </div>
+
+            <div class="col-sm-6 logo">
+                Nama <br>
+                <input type="text" id="nama" /> <br> Gender <br>
+                <select id="gender">
+                    <option value="M" selected="selected">Male</option>
+                    <option value="F">Female</option>
+                </select>
+                <br><br>
+                <button onclick="tambah()">Tambahkan Antrian</button>
+                <button onclick="hapus()">Hapus Antrian Terakhir</button>
+            </div>
+
+        </div>
+        <div class="col-sm-6">
+            <br>
+            <h3>DAFTAR ANTRIAN :</h3>
+            <ol id="tampil"></ol>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
